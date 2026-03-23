@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            .wing
+            {
+                position: relative;
+                z-index: 1;
+                border: 3px solid #651142;
+                background-color: #872D62;
+                width: 250px;
+                height: 150px;
+                float: left;
+            }
+            .wing2
+            {
+                position: relative;
+                z-index: 1;
+                border: 3px solid #651142;
+                background-color: #872D62;
+                width: 250px;
+                height: 150px;
+                float: left;
+            }
+            .wind:hover>wing, .wind:hover>wing2
+            {
+                transform: rotateY(45deg);
+                perspective: 1000px;
+            }
+            h1
+            {
+                transform: translate(-295px, 50px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wind">
+        	<div class="wing"></div>
+        	<div class="wing2"></div>
+        </div>
+        <h1>Hello</h1>
+    </body>
+</html>
