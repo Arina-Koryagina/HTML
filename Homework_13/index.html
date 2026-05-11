@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Title</title>
+        <style>
+            *{
+                font-family: Segoe UI;
+                padding: 0;
+                margin: 0;
+            }
+            .cont{
+                margin: 20px;
+                min-width: 610px;
+                max-width: 960px;
+                display: grid;
+                grid-template-columns: 100px 1fr;
+                justify-self: center;
+            }
+            .main{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                background-color: #5A5A5A;
+                padding: 15px 15px 0 0;
+            }
+            li{
+                color: white;
+                background-color: #808080;
+                padding: 20px 25px;
+                border-bottom: 1px solid #9E9E9E;
+            }
+            li:nth-last-child(){
+                border-bottom: none;
+            }
+            li:hover, .active{
+                background-color: #5A5A5A;
+            }
+            a{
+                text-decoration: none;
+            }
+            .card{
+                background-color: #5A5A5A;
+                color: white;
+                padding: 15px;
+            }
+            h3{
+                margin: 15px 0;
+            }
+            img{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+        	<div class="menu">
+        		<ul>
+        			<a href=""><li class="active">Tab 1</li></a>
+        			<a href=""><li>Tab 2</li></a>
+        			<a href=""><li>Tab 3</li></a>
+        		</ul>
+        	</div>
+        	<div class="main">
+        		<div class="card">
+        			<img src="icons_practice/350x220.png" alt="">
+        			<h3>Header 1</h3>
+        			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nemo cupiditate quaerat suscipit optio illo animi sequi sed voluptate voluptatem sapiente distinctio vel earum veritatis dignissimos labore accusantium minima, tenetur quos placeat unde quasi at eaque dicta! Beatae, nulla esse?</p>
+                </div>
+        		<div class="card">
+        			<img src="icons_practice/350x220.png" alt="">
+        			<h3>Header 2</h3>
+        			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta porro quaerat nihil. Minus aspernatur iusto aliquid repellendus beatae amet eos, rem sapiente adipisci fugit. Accusantium optio excepturi explicabo assumenda minus vero, earum blanditiis corrupti commodi, quae sunt consequatur placeat maxime!</p>
+                </div>
+                <div class="card">
+        			<img src="icons_practice/350x220.png" alt="">
+        			<h3>Header 3</h3>
+        			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni necessitatibus laudantium debitis maiores corrupti praesentium officia et placeat nisi! Aut laudantium obcaecati cumque sed rem sequi saepe. Explicabo officia, doloribus vitae illum fugiat ipsa id voluptates libero possimus distinctio vel!</p>
+        		</div>
+        	</div>
+        </div>
+
+    </body>
+</html>

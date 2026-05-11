@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            *
+            {
+                margin: 0;
+                padding: 0;
+            }
+            .site
+            {
+                background-color: #FAFAD2;
+                width: 1100px;
+                height: 500px;
+                overflow: hidden;
+            }
+
+            h1
+            {
+                font-family: Segoe UI;
+                text-transform: uppercase;
+                text-align: center;
+                padding-top: 30px;
+                margin-bottom: 50px;
+            }
+
+            img
+            {
+                float: left;
+            }
+
+            .img1
+            {
+                transform: rotate(-30deg);
+                width: 128px;
+                margin-left: 200px;
+                animation: icon2 2s linear forwards;
+                margin-top: 500px;
+            }
+            .img2
+            {
+                transform: rotate(-15deg);
+                width: 205px;
+                animation: icon 2s linear forwards 0.5s;
+                margin-top: 500px;
+            }
+            .img3
+            {
+                transform: rotate(15deg);
+                width: 205px;
+                animation: icon 2s linear forwards 1s;
+                margin-top: 500px;
+            }
+            .img4
+            {
+                transform: rotate(225deg);
+                width: 128px;
+                animation: icon2 2s linear forwards 1.5s;
+                margin-top: 500px;
+            }
+            .img5
+            {
+                transform: scale(0.8) rotate(90deg);
+                margin-left: 465px;
+                animation: icon3 2s linear forwards 2s;
+                margin-top: 500px;
+            }
+
+            @keyframes icon
+            {
+                from{margin-top: 500px;}
+                to{margin-top: 0px;}
+            }
+
+            @keyframes icon2
+            {
+                from{margin-top: 620px;}
+                to{margin-top: 120px;}
+            }
+
+            @keyframes icon3
+            {
+                from{margin-top: 460px;}
+                to{margin-top: -40px;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="site">
+        	<h1>hello, my site!</h1>
+        	<img src="icons_practice_module_4/calc.png" class="img1">
+        	<img src="icons_practice_module_4/book.png" class="img2">
+        	<img src="icons_practice_module_4/paper.png" class="img3">
+        	<img src="icons_practice_module_4/pallete.png" class="img4">
+        	<img src="icons_practice_module_4/pencil.png" class="img5">
+        </div>
+    </body>
+</html>

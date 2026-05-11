@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://kit.fontawesome.com/5648c1ec07.js" crossorigin="anonymous"></script>
+        <title>Home</title>
+        <style>
+            *{
+                font-family: Segoe UI;
+                padding: 0;
+                margin: 0;
+            }
+            .hidden{
+                display: none;
+            }
+            .header{
+                background-color: #1B5589;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 50px;
+            }
+            .menu{
+                display: flex;
+                align-items: center;
+            }
+            .menu a{
+                margin-right: 15px;
+            }
+            a{
+                color: #8197AE;
+                text-decoration: none;
+                margin: 5px;
+            }
+            .active{
+                color: white;
+            }
+            .main{
+                padding: 0 50px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            h2{
+                font-weight: 100;
+                font-size: 30px;
+                text-align: center;
+                padding: 20px;
+                width: 100%;
+            }
+            hr{
+                width: 100%;
+                border: 1px solid #EEEEEE;
+            }
+            .content{
+                width: 50%;
+            }
+            .news{
+                display: flex;
+                padding: 15px;
+                border: 1px solid #EEEEEE;
+            }
+            .text{
+                margin: 5px;
+            }
+            .top{
+                display: flex;
+                justify-content: space-between
+            }
+            p{
+                color: #86848C;
+            }
+            .title{
+                font-weight: 500;
+                font-size: 20px;
+                color: #495057;
+            }
+            .date{
+                font-size: 14px;
+                color: #A19995;
+            }
+            .button{
+                width: 95%;
+                margin-top: 10px;
+                border-radius: 5px;
+                padding: 10px;
+                text-align: center;
+                justify-self: center;
+            }
+            .ne{
+                color: white;
+                background-color: #6C757D;
+            }
+            .re{
+                color: black;
+                background-color: #F8F9FA;
+            }
+            .reward{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .reward:nth-child(even){
+                flex-direction: row-reverse;
+            }
+            .badge{
+                display: flex;
+                align-items: center;
+                margin: 0 20px;
+            }
+            .badge p{
+                font-weight: 650;
+                font-size: 20px;
+                color: black;
+            }
+            .name{
+                border: 1px solid #EEEEEE;
+                padding: 5px 15px;
+                border-radius: 0 30px 30px 0;
+                corner-shape: bevel; /*https://blog.logrocket.com/create-fancy-corners-css/*/
+            }
+            .reward:nth-child(even) .name{
+                border: 1px solid #EEEEEE;
+                padding: 5px 15px;
+                border-radius: 30px 0 0 30px;
+                corner-shape: bevel;
+            }
+            .reward .date{
+                border: 1px solid #EEEEEE;
+                padding: 5px 15px;
+                border-radius: 30px 0 0 30px;
+                corner-shape: bevel;
+            }
+            .reward:nth-child(even) .date{
+                border: 1px solid #EEEEEE;
+                padding: 5px 15px;
+                border-radius: 0 30px 30px 0;
+                corner-shape: bevel;
+            }
+            .name p{
+                font-weight: 400;
+                font-size: 16px;
+                color: black;
+            }
+            .date p{
+                font-size: 12px;
+                font-weight: 300;
+                color: black;
+            }
+            .empty{
+                width: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+        	<div class="header">
+        		<div class="menu">
+                    <a href="index.html">
+                        <i class="fa-solid fa-chalkboard-user" style="width: 42px; height: 42px; color: rgb(255, 255, 255);"></i>
+                    </a>
+        		    <a href="../Exam/index.html" class="active">Home</a>
+        		    <a href="../Exam/index2.html">Homeworks</a>
+        		    <a href="../Exam/index3.html">Settings</a>
+        		</div>
+        		<a href="">
+        		    <img src="icons_hw_module_12.7/av_64.png" style="height: 56px;" alt="avatar">
+        		</a>
+        	</div>
+        	<div class="main">
+        		<h2>Dakota Greenaway (ABC_123)</h2>
+        		<hr>
+        		<div class="content">
+        			<h2>News</h2>
+        			<div class="scroll">
+        				<div class="news">
+        					<img src="icons_hw_module_12.7/holiday.png" alt="">
+        					<div class="text">
+        						<div class="top">
+        						    <p class="title">Weekends</p>
+        						    <p class="date">1 day ago</p>
+        						</div>
+        						<p>Dear students, kindly be informed that there will be no lessons on 5th and 6th April at the Academy due to the holiday.</p>
+        					</div>
+        				</div>
+        				<div class="news">
+        					<img class="hidden" src="icons_hw_module_12.7/av_256.png" alt="">
+        					<div class="text">
+        						<div class="top">
+        						    <p class="title">Programming consultations</p>
+        						    <p class="date">3 days ago</p>
+        						</div>
+        						<p>This Sunday, March 26 at 1:00 pm the Academy will be holding programming consultations for the first-year students.</p>
+        					</div>
+        				</div>
+        				<div class="news">
+        					<img src="icons_hw_module_12.7/bank.png" alt="">
+        					<div class="text">
+        						<div class="top">
+        						    <p class="title">Meeting with ABC Bank</p>
+        						    <p class="date">20/03/2019</p>
+        						</div>
+        						<p>On Monday, March 27 at 7:00 pm, we invite you to a business meeting with ABC Bank.</p>
+        					</div>
+        				</div>
+        			</div>
+                    <a href="">
+        			    <div class="button ne">More</div>
+        			</a>
+        		</div>
+        		<div class="content">
+        			<h2>Rewards</h2>
+        			<div class="scroll">
+        			    <div class="reward">
+        			    	<div class="name">
+        			    		<p>Class Attended</p>
+        			    	</div>
+        			    	<div class="badge">
+        			    	    <p>+1</p>
+        			    	    <img src="icons_hw_module_12.7/badge.png" alt="">
+        			    	</div>
+        			    	<div class="date">
+        			    		<p>20/04/2019</p>
+        			    	</div>
+        			    	<div class="empty"></div>
+        			    </div>
+        			    <div class="reward">
+        			    	<div class="name">
+        			    		<p>Class Attended</p>
+        			    	</div>
+        			    	<div class="badge">
+        			    	    <p>+1</p>
+        			    	    <img src="icons_hw_module_12.7/badge.png" alt="">
+        			    	</div>
+        			    	<div class="date">
+        			    		<p>19/04/2019</p>
+        			    	</div>
+        			    	<div class="empty"></div>
+        			    </div>
+        			    <div class="reward">
+        			    	<div class="name">
+        			    		<p>Class Attended</p>
+        			    	</div>
+        			    	<div class="badge">
+                                <p>+1</p>
+        			    	    <img src="icons_hw_module_12.7/badge.png" alt="">
+                            </div>
+        			    	<div class="date">
+        			    		<p>18/04/2019</p>
+        			    	</div>
+        			    	<div class="empty"></div>
+        			    </div>
+        			    <div class="reward">
+        			    	<div class="name">
+        			    		<p>Class Attended</p>
+        			    	</div>
+        			    	<div class="badge">
+        			    	    <p>+1</p>
+        			    	    <img src="icons_hw_module_12.7/badge.png" alt="">
+        			    	</div>
+        			    	<div class="date">
+        			    		<p>17/04/2019</p>
+        			    	</div>
+        			    	<div class="empty"></div>
+        			    </div>
+        			    <div class="reward">
+        			    	<div class="name">
+        			    		<p>Class Attended</p>
+        			    	</div>
+        			    	<div class="badge">
+        			    	    <p>+1</p>
+        			    	    <img src="icons_hw_module_12.7/badge.png" alt="">
+        			    	</div>
+        			    	<div class="date">
+        			    		<p>16/04/2019</p>
+        			    	</div>
+        			    	<div class="empty"></div>
+        			    </div>
+        			    <div class="reward">
+        			    	<div class="name">
+        			    		<p>Class Attended</p>
+        			    	</div>
+        			    	<div class="badge">
+        			    	    <p>+1</p>
+        			    	    <img src="icons_hw_module_12.7/badge.png" alt="">
+        			    	</div>
+        			    	<div class="date">
+        			    		<p>15/04/2019</p>
+        			    	</div>
+        			    	<div class="empty"></div>
+        			    </div>
+        			    <div class="reward">
+        			    	<div class="name">
+        			    		<p>Class Attended</p>
+        			    	</div>
+        			    	<div class="badge">
+        			    	    <p>+1</p>
+        			    	    <img src="icons_hw_module_12.7/badge.png" alt="">
+        			    	</div>
+        			    	<div class="date">
+        			    		<p>14/04/2019</p>
+        			    	</div>
+        			    	<div class="empty"></div>
+        			    </div>
+        			    <div class="reward">
+        			    	<div class="name">
+        			    		<p>Class Attended</p>
+        			    	</div>
+        			    	<div class="badge">
+        			    	    <p>+1</p>
+        			    	    <img src="icons_hw_module_12.7/badge.png" alt="">
+        			    	</div>
+        			    	<div class="date">
+        			    		<p>13/04/2019</p>
+        			    	</div>
+        			    	<div class="empty"></div>
+        			    </div>
+        			    <div class="reward">
+        			    	<div class="name">
+        			    		<p>Class Attended</p>
+        			    	</div>
+        			    	<div class="badge">
+        			    	    <p>+1</p>
+        			    	    <img src="icons_hw_module_12.7/badge.png" alt="">
+        			    	</div>
+        			    	<div class="date">
+        			    		<p>12/04/2019</p>
+        			    	</div>
+        			    	<div class="empty"></div>
+        			    </div>
+        			</div>
+                    <a href="">
+        			    <div class="button re">More</div>
+        			</a>
+        		</div>
+        	</div>
+        </div>
+    </body>
+</html>

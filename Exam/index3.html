@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://kit.fontawesome.com/5648c1ec07.js" crossorigin="anonymous"></script>
+        <title>Settings</title>
+        <style>
+            *{
+                font-family: Segoe UI;
+                padding: 0;
+                margin: 0;
+            }
+            .hidden{
+                display: none;
+            }
+            .header{
+                background-color: #1B5589;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 50px;
+            }
+            .menu{
+                display: flex;
+                align-items: center;
+            }
+            .menu a{
+                margin-right: 15px;
+            }
+            a{
+                color: #8197AE;
+                text-decoration: none;
+                margin: 5px;
+            }
+            .active{
+                color: white;
+            }
+            .main{
+                padding: 0 50px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            h2{
+                font-weight: 100;
+                font-size: 30px;
+                text-align: center;
+                padding: 20px;
+                width: 100%;
+            }
+            .button{
+                width: 100%;
+                margin-top: 10px;
+                margin-left: 15px;
+                border-radius: 5px;
+                padding: 10px;
+                text-align: center;
+                align-self: center;
+                color: white;
+                background-color: #6C757D;
+            }
+            .menu{
+                display: flex;
+            }
+            .bar{
+                display: flex;
+                width: 100%;
+                text-transform: uppercase;
+                color: #1F61B7;
+                background-color: #CCE5FF;
+                padding: 15px;
+            }
+            .bar p:nth-child(1){
+                margin: 0 185px 0 60px;
+            }
+            .bar p:nth-child(2){
+                margin-right: 315px;
+            }
+            .colum{
+                display: flex;
+                flex-direction: column;
+                margin: 15px;
+            }
+            .icon{
+                width: 140px;
+            }
+            .icon .button{
+                width: 80%;
+                margin-left: 0;
+            }
+            .data{
+                width: 405px;
+            }
+            .pass{
+                width: 400px;
+            }
+            input{
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid #EEEEEE;
+                padding: 10px;
+                margin: 10px;
+                margin-left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+        	<div class="header">
+        		<div class="menu">
+                    <a href="index.html">
+                        <i class="fa-solid fa-chalkboard-user" style="width: 42px; height: 42px; color: rgb(255, 255, 255);"></i>
+                    </a>
+        		    <a href="../Exam/index.html">Home</a>
+        		    <a href="../Exam/index2.html">Homeworks</a>
+        		    <a href="../Exam/index3.html" class="active">Settings</a>
+        		</div>
+        		<a href="">
+        		    <img src="icons_hw_module_12.7/av_64.png" style="height: 56px;" alt="avatar">
+        		</a>
+        	</div>
+        	<div class="main">
+        	    <h2>Settings</h2>
+        	    <div class="bar">
+        	        <p>avatar</p>
+        	        <p>student's info</p>
+        	        <p>change password</p>
+        	    </div>
+        	    <div class="colum icon">
+        	        <img src="icons_hw_module_12.7/av_256.png" alt="">
+        	        <div class="button">Choose photo</div>
+        	    </div>
+        	    <div class="colum data">
+        	        <form action="get">
+        	            <input type="text" name="frst_name" placeholder="First name">
+        	            <input type="text" name="last_name" placeholder="Last name">
+        	            <input type="text" name="email" placeholder="Email">
+        	            <input type="tel" name="phn_num" placeholder="Phone number">
+        	            <input type="text" name="adrs" placeholder="Address">
+        	            <input type="url" name="fb" placeholder="FB link">
+        	        </form>
+        	        <div class="button">Save changes</div>
+        	    </div>
+        	    <div class="colum pass">
+        	        <form action="get">
+        	            <input type="password" name="old_pas" placeholder="Old password">
+        	            <input type="password" name="new_pas" placeholder="New password">
+        	            <input type="password" name="check_pas" placeholder="Repeat password">
+        	        </form>
+        	        <div class="button">Change password</div>
+        	    </div>
+        	</div>
+        </div>
+    </body>
+</html>

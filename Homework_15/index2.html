@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                font-family: Segoe UI;
+                padding: 0;
+                margin: 0;
+            }
+            .cont{
+                min-width: 521px;
+                max-width: 900px;
+                justify-self: center;
+                margin: 10px;
+                box-shadow: 0 0 15px #BBBBBB;
+                border: 1px solid #C3C3C3;
+            }
+            .main, .foot{
+                padding: 30px;
+            }
+            .submit{
+                text-transform: uppercase;
+                color: white;
+                background-color: #008B8B;
+                justify-self: end;
+                padding: 10px 60px;
+                border-radius: 3px;
+                box-shadow: 1px 1px 3px #BBBBBB;
+            }
+            h2{
+                font-weight: 400;
+                margin-bottom: 15px;
+                width: 100%;
+            }
+            img{
+                height: 30px;
+                margin: 5px;
+            }
+            .main{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .register{
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            .agreement{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+            }
+            .top{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .top input, select{
+                border: none;
+                border-bottom: 1px solid #868686;
+                padding: 5px 10px;
+            }
+            .register input{
+                width: 35%;
+                margin-right: 10px;
+            }
+            .full input{
+                width: 80%;
+            }
+            .form{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .personal{
+                margin-top: 15px;
+                width: 50%;
+            }
+            .personal input{
+                width: 42%;
+                margin-right: 10px;
+                margin: 5px;
+            }
+            select{
+                width: 47%;
+                margin-right: 10px;
+                margin: 5px;
+            }
+            @media screen and (max-width:900px){
+                .top{
+                    flex-direction: column;
+                }
+                .register input{
+                    width: 39%;
+                    margin-right: 10px;
+                }
+                .full input{
+                    width: 85%;
+                }
+                .personal{
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width:600px){
+                .form{
+                    justify-content: end;
+                }
+                .register input{
+                    width: 85%;
+                    margin-right: 10px;
+                }
+                .personal input{
+                    width: 96%;
+                    margin-right: 10px;
+                    margin: 5px;
+                }
+                select{
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+        	<div class="main">
+        	    <div class="top">
+        	        <div class="register">
+        	            <h2>Registration form</h2>
+        	            <div class="form full">
+        	                <img src="icons_ht/icons_ht/username.png">
+                            <input type="text" placeholder="Username">
+        	            </div>
+        	            <div class="form full">
+        	                <img src="icons_ht/icons_ht/email.png">
+        	                <input type="email" placeholder="Email address">
+        	            </div>
+        	            <div class="form">
+        	                <img src="icons_ht/icons_ht/pswd.png">
+        	                <input type="password" placeholder="Password">
+        	                <input type="password" placeholder="Confirm password">
+        	            </div>
+        	        </div>
+        	        <div class="personal">
+        	            <h2>Personal details</h2>
+        	            <input type="text" placeholder="First name">
+        	            <input type="text" placeholder="Last name">
+        	            <select name="gender">
+        	                <option value="m">Male</option>
+        	                <option value="f">Female</option>
+        	                <option value="nb">Non-binary</option>
+        	                <option value="n-t-s">Prefer not to say</option>
+        	            </select>
+        	            <input type="date">
+        	        </div>
+        	    </div>
+        	    <div class="agreement">
+        	        <div class="the-check">
+        	            <input type="checkbox">
+        	            <label for="name">I agree to receive news and special offers</label>
+        	        </div>
+        	        <div class="the-check">
+        	            <input type="checkbox">
+        	            <label for="name"> I agree with the Terms of Conditions</label>
+        	        </div>
+        	    </div>
+        	</div>
+        	   <hr>
+        	<div class="foot">
+        	    <div class="submit">submit</div>
+        	</div>
+        </div>
+    </body>
+</html>

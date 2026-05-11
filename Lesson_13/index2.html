@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            .cont{
+                display: grid;
+                grid-template-areas:
+                    'header header header header header logo'
+                    'menu content content content content right'
+                    'menu footer footer footer footer footer';
+                grid-gap: 20px;
+            }
+
+            .cont > div{
+                padding: 20px;
+            }
+
+            .item1{
+                grid-area: header;
+                background-color: aqua;
+            }
+
+            .item2{
+                grid-area: menu;
+                background-color: aqua;
+            }
+
+            .item3{
+                grid-area: content;
+                background-color: aqua;
+                height: 80vh;
+            }
+
+            .item4{
+                grid-area: right;
+                background-color: aqua;
+            }
+
+            .item5{
+                grid-area: footer;
+                background-color: aqua;
+            }
+
+            .item6{
+                grid-area: logo;
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+        	<div class="item1">Header</div>
+        	<div class="item6">Logo</div>
+        	<div class="item2">Menu</div>
+        	<div class="item3">Content</div>
+        	<div class="item4">Right</div>
+        	<div class="item5">Footer</div>
+        </div>
+    </body>
+</html>

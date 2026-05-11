@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                font-family: Segoe UI;
+                margin: 0;
+                padding: 0;
+            }
+            .cont{
+                border: 1px solid gray;
+                box-shadow: 0px 0px 5px gray;
+                /*padding: 10px;*/
+                margin: 10px;
+                display: flex;
+                flex-direction: row;
+            }
+            .img{
+                flex: 2;
+                margin: 5px;
+                min-width: 25%;
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+            .desc{
+                flex: 4;
+                padding: 5px 10px;
+                display: flex;
+                flex-direction: column;
+            }
+            .load{
+                display: flex;
+                flex-direction: row;
+                border: 1px solid #8395BC;
+            }
+            .bl1{
+                background-color: #D0D6E2;
+                text-transform: uppercase;
+                flex-basis: 40%;
+                padding: 5px 15px;
+            }
+            .bl2{
+                flex: 1;
+                text-align-last: end;
+                align-content: center;
+                padding-right: 5px;
+            }
+            h3{
+                padding: 30px 0px;
+            }
+            .but{
+                flex: 1;
+                display: flex;
+                background-color: #3B5998;
+                justify-content: center;
+                padding: 5px;
+                margin: 5px;
+                height: fit-content;
+            }
+            .button{
+                color: white;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+            @media screen and (max-width: 600px){
+                .cont {
+                    flex-direction: column;
+                    align-items: stretch;
+                }
+                img, .desc, .but {
+                    flex: none;
+                    width: 100%;
+                }
+                .but{
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+        	<div class="img">
+        	    <img src="icons_practice_module_6_7/loading.png" alt="">
+        	</div>
+        	<div class="desc">
+        		<div class="load">
+        		    <div class="bl1">
+        		    	<p>uploading 40%</p>
+        		    </div>
+        		    <div class="bl2">
+        		    	<p>About 23 minutes remaining</p>
+        		    </div>
+        		</div>
+        		<h3>Title of video</h3>
+        		<p>* Your video is still uploading. Please keep this page open until it's done.</p>
+        	</div>
+        	<div class="but">
+        	    <p><span class="button">done</span></p>
+        	</div>
+        </div>
+    </body>
+</html>

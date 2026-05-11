@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            .heart
+            {
+                width: 128px;
+                margin: 60px;
+                filter: grayscale(1);
+
+            }
+
+            .heart:hover
+            {
+                animation: trans 5s linear forwards;
+            }
+
+            @keyframes trans
+            {
+                from{filter: grayscale(1);}
+                to{filter: grayscale(0); transform: scale(2);}
+            }
+        </style>
+    </head>
+    <body>
+        <img src="icons_practice_module_4/favorites.png" class="heart">
+    </body>
+</html>

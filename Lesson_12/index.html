@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                font-family: Segoe UI;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-color: #014242;
+            }
+            .cont{
+                margin: 80px;
+            }
+            .sub{
+                color: #94928C;
+                font-size: 18px;
+            }
+            h1{
+                /*text-transform: capitalize;*/
+                color: white;
+                font-size: 55px;
+                width: 618px;
+                margin: 40px 0;
+            }
+            .info{
+                margin-top: 20px;
+                display: flex;
+                height: 90px;
+            }
+            img{
+                padding: 5px;
+            }
+            .col{
+                display: flex;
+                flex-wrap: nowrap;
+                min-width: 360px;
+            }
+            .text{
+                margin-left: 35px;
+                margin-bottom: 15px;
+                width: 145px;
+                min-width: 133px;
+                align-content: center;
+            }
+            p{
+                color: white;
+                font-size: 18px;
+            }
+            @media screen and (max-width:600px){
+                .cont{
+                    margin: 30px;
+                }
+                .info{
+                    height: 110px;
+                }
+                img{
+                    padding: 10px;
+                }
+                .text:nth-child(4){
+                    order: -1;
+                }
+                h1{
+                    font-size: 35px;
+                    width: 411px;
+                }
+                .col{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+            <p class="sub">Home / Articles / </p>
+            <h1>The Difference Between Responsive and Adaptive Design</h1>
+            <div class="info">
+                <img src="materials_hw_module_6_7/icons_hw/account.png" alt="">
+                <div class="col">
+                    <div class="text">
+                        <p class="sub">Author</p>
+                        <p>Geoff Graham</p>
+                    </div>
+                    <div class="text">
+                        <p class="sub">49 Comments</p>
+                        <p>Go to comments</p>
+                    </div>
+                    <div class="text">
+                        <p class="sub">Published</p>
+                        <p>Nov 11, 2018</p>
+                    </div>
+                    <div class="text">
+                        <p class="sub">Updated</p>
+                        <p>Nov 17, 2018</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

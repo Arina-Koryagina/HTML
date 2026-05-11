@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            *
+            {
+                font-family: Segoe UI;
+            }
+            ul
+            {
+                list-style-image: url(icons/unchecked_16.png);
+                list-style-position: inside;
+                padding: 0;
+                width: 500px;
+            }
+            li
+            {
+                background-color: #ADD8E6;
+                padding: 15px 50px;
+            }
+            li:nth-child(2n)
+            {
+                background-color: #A5CCDA;
+            }
+            li:after
+            {
+                content: url(icons/cross_16.png);
+                padding-left: 30px;
+            }
+            li.checked
+            {
+                list-style-image: url(icons/checked_16.png);
+                text-decoration: line-through;
+                background-color: #E2E2E2;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My To Do List</h1>
+        <ul>
+        	<li>Hit the gym</li>
+        	<li class="checked">Pay bills</li>
+        	<li>Meet John</li>
+        	<li>Buy eggs</li>
+        	<li class="checked">Read a book</li>
+        	<li>Organize office</li>
+        	<li>Eat dinner</li>
+        	<li>Buy apples</li>
+        	<li>Meet George</li>
+        	<li>Feed the car</li>
+        	<li class="checked">Write a letter</li>
+        	<li>Run 1 km</li>
+        </ul>
+    </body>
+</html>

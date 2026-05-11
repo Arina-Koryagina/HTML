@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            *{
+               font-family: Segoe UI;
+               margin: 0;
+               padding: 0;
+            }
+            .flights{
+                display: flex;
+                margin-top: 20px;
+                justify-content: space-between;
+            }
+            .filters{
+                height: 100px;
+                width: 25%;
+                border-radius: 5px;
+                box-shadow: 0 0 3px 3px gray;
+                padding: 20px;
+            }
+            .res{
+                width: 65%;
+                height: 100px;
+                border-radius: 5px;
+                box-shadow: 0 0 3px 3px gray;
+                padding: 20px;
+            }
+            .head{
+                color: white;
+                background-color: blue;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 70px;
+                padding: 0 70px;
+            }
+            .main{
+                margin: 20px 70px;
+            }
+            input[type="text"]{
+                padding: 10px 15px;
+                width: 15%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+            <div class="head">
+              <h3>Flights - Search List</h3>
+              <p>Home / Flights Search List</p>
+            </div>
+                <div class="main">
+                    <form action="get">
+                        <input type="radio" value="one">One Way
+                        <input type="radio" value="round">Round Trip</br>
+                        <input type="text" placeholder="From">
+                        <input type="text" placeholder="To">
+                        <input type="text" placeholder="Depart Date">
+                        <input type="text" placeholder="Return Date">
+                        <select>
+                            <option value="econ">Econom Class</option>
+                            <option value="comf">Comfort Class</option>
+                            <option value="prem">Premium Class</option>
+                        </select>
+                        <input type="submit" value="Search">
+                    </form>
+                <div class="flights">
+                <div class="filters">
+                    <h3>Filters</h3>
+                    <p>No. of Stops</p>
+                    <input type="checkbox">Non Stop</br>
+                    <input type="checkbox">1 Stop</br>
+                    <input type="checkbox">2+ Stops</br>
+                    <p>Price</p>
+                </div>
+                <div class="res">
+                   <h3>Dehli to Sydney</h3>
+                   <grid></grid>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

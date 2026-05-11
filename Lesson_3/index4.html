@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            *
+            {
+                font-family: Segoe UI;
+                text-align: justify;
+            }
+
+            .container
+            {
+                width: 950px;
+                margin: auto;
+                padding: 20px;
+            }
+            dl
+            {
+                color: #F5F5F5;
+            }
+            dt
+            {
+                background-color: #0E494E;
+                padding: 10px 60px;
+
+            }
+            dd
+            {
+                background-color: #236167;
+                margin-left: 0;
+                padding: 15px 30px;
+                margin-bottom: 20px;
+            }
+            ol
+            {
+                list-style-type: none;
+                padding: 0;
+            }
+            li
+            {
+                font-size: 12px;
+                counter-increment: number;
+                margin-bottom: 10px;
+            }
+            li::before
+            {
+                content: '['counter(number)'] ';
+                font-weight: 700;
+            }
+            .note
+            {
+                color: #DC9B96;
+                vertical-align: super;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <dl>
+                <dt>TAG</dt>
+                <dd>In information systems, a tag is a keyword or term assigned to a piece of information (such as an Internet bookmark, digital image, database record, or computer file). This kind of metadata helps describe an item and allows it to be found again by browsing or searching.<span class="note">[1]</span> Tags are generally chosen informally and personally by the item's creator or by its viewer, depending on the system, although they may also be chosen from a controlled vocabulary.<span class="note">[2]</span></dd>
+                <dt>ATTRIBUTE</dt>
+                <dd>HTML attributes are special words used inside the opening tag to control the element's behaviour. HTML attributes are a modifier of an HTML element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them. In HTML syntax, an attribute is added to an HTML start tag.</dd>
+                <dt>ELEMENT</dt>
+                <dd>An HTML element is an individual component of an HTML (Hypertext Markup Language) document or web page.[vague] HTML is composed of a tree of HTML nodes, such as text nodes. Each node can have HTML attributes specified. Nodes can also have content, including other nodes and text. Many HTML nodes represent semantics, or meaning. For example, the &lt;title&gt; node represents the title of the document.</dd>
+            </dl>
+            <ol>
+                <li>&nbsp;&nbsp;&nbsp;Some users, however, see tags not as metadata but as "just more content": Berendt, Bettina; Hanser, Christoph (2007). "Tags are not metadata, but 'just more content'—to some people" (PDF). Proceedings of the International Conference on Weblogs and Social Media (ICWSM), Boulder, Colorado, USA, March 26–28, 2007. Menlo Park, CA: International Joint Conferences on Artificial Intelligence. OCLC 799635928.</li>
+                <li>&nbsp;&nbsp;&nbsp;Smith, Gene (2008). Tagging: people-powered metadata for the social web. Berkeley: New Riders Press. ISBN 9780321529176. OCLC 154806677.</li>
+            </ol>
+        </div>
+    </body>
+</html>

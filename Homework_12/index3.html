@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                font-family: Segoe UI;
+                margin: 0;
+                padding: 0;
+                /*overflow: hidden;*/
+            }
+            body{
+                background-color: #DBDBDB;
+            }
+            .cont{
+                display: flex;
+                min-width: 600px;
+                max-width: 1200px;
+            }
+            .col1{
+                background-color: #333333;
+                width: 17%;
+                height: 100vh;
+                padding: 20px;
+            }
+            .col1 img{
+                width: 50%;
+                margin-left: 25%;
+                margin-bottom: 20px;
+            }
+            ul{
+                list-style: none;
+            }
+            li:nth-child(odd){
+                border-top: 1px solid #2C2C2C;
+                border-bottom: 1px solid #2C2C2C;
+            }
+            li{
+                color: white;
+                text-transform: uppercase;
+                padding: 25px;
+            }
+            .col2{
+                width: 80%;
+                padding: 20px;
+            }
+            .info{
+                display: flex;
+                justify-content: space-between;
+            }
+            h2{
+                margin: 10px;
+            }
+            .char{
+                background-color: #F5F5F5;
+                padding: 20px;
+                width: 44%;
+                margin: 10px;
+                text-align: center;
+            }
+            .tab{
+                width: 100%;
+            }
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            .head{
+                font-weight: 500;
+            }
+            tr{
+                border-bottom: 1px solid #DBDBDB;
+            }
+            td{
+                padding: 5px;
+            }
+            td:nth-child(1){
+                width: 5%;
+                text-align: center;
+            }
+            td:nth-child(2){
+                width: 55%;
+                text-align: left;
+            }
+            td:nth-child(3){
+                width: 13%;
+                text-align: left;
+            }
+            td:nth-child(4){
+                width: 12%;
+                text-align: center;
+            }
+            img{
+                width: 50%;
+                margin-top: 10px;
+            }
+            p{
+                text-transform: uppercase;
+                text-align: left;
+                font-weight: 650;
+            }
+            @media screen and (max-width: 600px){
+                .cont{
+                    flex-direction: column;
+                }
+                .info{
+                    flex-direction: column;
+                }
+                .char{
+                    width: 100%;
+                }
+                .col1{
+                    height: min-content;
+                    width: 100%;
+                    padding: 0;
+                }
+                .col1 img{
+                    width: 7%;
+                    margin-left: 45%;
+                    margin-bottom: 5px;
+                }
+                li{
+                    padding: 10px 0 10px 25px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+        	<div class="col1">
+        		<img src="icons_practice_module_6_7/logo.png" alt="">
+        		<ul>
+        			<li>dashboard</li>
+        			<li>users</li>
+        			<li>file manager</li>
+        			<li>posts</li>
+        			<li>events</li>
+        		</ul>
+        	</div>
+        	<div class="col2">
+        		<h2>Dashboard - May 25, 2019</h2>
+        		<div class="info">
+        			<div class="char">
+        				<p>traffic</p>
+        				<img src="icons_practice_module_6_7/chart1.png" alt="">
+        			</div>
+        			<div class="char">
+        				<p>loads</p>
+        				<img src="icons_practice_module_6_7/chart2.png" alt="">
+        			</div>
+        		</div>
+        		<div class="info">
+        		    <div class="char tab">
+        		        <p>recent activity</p>
+        		        <table>
+        		            <tr class="head">
+        		            	<td>#</td>
+        		            	<td>Title</td>
+        		            	<td>Author</td>
+        		            	<td>Date</td>
+        		            </tr>
+        		            <tr>
+        		            	<td>1</td>
+        		            	<td>Etiam eu erat sit amet nisi eleifend aliquam</td>
+        		            	<td>Phoebe Britton</td>
+        		            	<td>25/05/19</td>
+        		            </tr>
+        		            <tr>
+        		            	<td>2</td>
+        		            	<td>Ut maximus lacus ut ante tristique, et rutum leo eleifend</td>
+        		            	<td>Rosina Clay</td>
+        		            	<td>25/05/19</td>
+        		            </tr>
+        		            <tr>
+        		            	<td>3</td>
+        		            	<td>Donec eget ligula sed diam pharetra sodales eget a metus</td>
+        		            	<td>Ayush Horn</td>
+        		            	<td>24/05/19</td>
+        		            </tr>
+        		            <tr>
+        		            	<td>4</td>
+        		            	<td>Curabitur bibendum odio in velit pretium luctus</td>
+        		            	<td>Jillian Carver</td>
+        		            	<td>23/05/19</td>
+        		            </tr>
+        		        </table>
+        		    </div>
+        		</div>
+        	</div>
+        </div>
+    </body>
+</html>

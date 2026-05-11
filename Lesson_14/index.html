@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            *{
+                font-family: Segoe UI;
+                padding: 0;
+                margin: 0;
+            }
+            body{
+                background-color: #f5f5f5;
+            }
+            .cont{
+                max-width: 800px;
+                margin: auto;
+                /*justify-self: center;*/
+            }
+            .user{
+                display: flex;
+                padding: 5px;
+            }
+            .user2{
+                flex-direction: row-reverse;
+            }
+            .inf{
+                flex-basis: 25%;
+                margin: 0 10px;
+            }
+            .inf p:nth-child(2){
+                color: #808080;
+                font-size: 14px;
+                padding-bottom: 10px;
+            }
+            .user1 .inf{
+                display: flex;
+                justify-content: end;
+                align-items: flex-end;
+                text-align: end;
+            }
+            .user2 .inf{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: start;
+                align-items: flex-end;
+                text-align: start;
+            }
+            .msg{
+                flex-basis: 50%;
+                flex-wrap: wrap;
+                padding: 20px;
+            }
+            .user1 .msg{
+                background-color: #FFB6C1;
+                border-radius: 20px 20px 20px 0;
+            }
+            .user2 .msg{
+                background-color: #ADD8E6;
+                border-radius: 20px 20px 0 20px;
+            }
+            .emp{
+                flex-basis: 25%;
+                margin: 0 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+        	<div class="user user1">
+        		<div class="inf">
+        		    <div class="text">
+        		        <p>Anie Smith</p>
+        		        <p>4 hours ago</p>
+        		    </div>
+        		    <img src="icons_ht/avatar_2.png" alt="">
+        		</div>
+        		<div class="msg">
+        		    <p>Lorem ipsum dolor sit amet consectetur. Labore, veniam!</p>
+        		</div>
+        		<div class="emp"></div>
+        	</div>
+        	<div class="user user2">
+        		<div class="inf">
+        		    <div class="text">
+        		        <p>Jack Silverston</p>
+        		        <p>4 hours ago</p>
+        		    </div>
+        		    <img src="icons_ht/avatar_1.png" alt="">
+                </div>
+        		<div class="msg">
+        		    <p>Lorem ipsum dolor sit amet consectetur.</p>
+        		</div>
+        		<div class="emp"></div>
+        	</div>
+        	<div class="user user1">
+        		<div class="inf">
+        		    <div class="text">
+        		        <p>Anie Smith</p>
+        		        <p>4 hours ago</p>
+        		    </div>
+        		    <img src="icons_ht/avatar_2.png" alt="">
+        		  </div>
+        		<div class="msg">
+        		    <p>Lorem ipsum dolor sit amet consectetur.</p>
+        		</div>
+        		<div class="emp"></div>
+        	</div>
+        	<div class="user user2">
+        		<div class="inf">
+        		    <div class="text">
+        		        <p>Jack Silverston</p>
+        		        <p>3 hours ago</p>
+        		    </div>
+        		    <img src="icons_ht/avatar_1.png" alt="">
+                </div>
+        		<div class="msg">
+        		    <p>Lorem ipsum, dolor sit amet consectetur. Tenetur, veritatis?</p>
+        		</div>
+        		<div class="emp"></div>
+        	</div>
+        	<div class="user user1">
+        		<div class="inf">
+        		    <div class="text">
+        		        <p>Anie Smith</p>
+        		        <p>3 hours ago</p>
+        		    </div>
+        		    <img src="icons_ht/avatar_2.png" alt="">
+                </div>
+        		<div class="msg">
+        		    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        		</div>
+        		<div class="emp"></div>
+        	</div>
+        	<div class="user user2">
+        		<div class="inf">
+        		    <div class="text">
+        		        <p>Jack Silverston</p>
+        		        <p>2 hours ago</p>
+        		    </div>
+        		    <img src="icons_ht/avatar_1.png" alt="">
+                </div>
+        		<div class="msg">
+        		    <p>Lorem ipsum, dolor sit amet consectetur.</p>
+        		</div>
+        		<div class="emp"></div>
+        	</div>
+        </div>
+    </body>
+</html>

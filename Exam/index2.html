@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://kit.fontawesome.com/5648c1ec07.js" crossorigin="anonymous"></script>
+        <title>Homeworks</title>
+        <style>
+            *{
+                font-family: Segoe UI;
+                padding: 0;
+                margin: 0;
+            }
+            .hidden{
+                display: none;
+            }
+            .header{
+                background-color: #1B5589;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 50px;
+            }
+            .menu{
+                display: flex;
+                align-items: center;
+            }
+            .menu a{
+                margin-right: 15px;
+            }
+            a{
+                color: #8197AE;
+                text-decoration: none;
+                margin: 5px;
+            }
+            .active{
+                color: white;
+            }
+            .main{
+                padding: 0 50px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .head{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            h2{
+                font-weight: 100;
+                font-size: 30px;
+                text-align: end;
+                padding: 20px;
+                width: 60%;
+            }
+            h3{
+                width: 100%;
+                font-weight: 100;
+                font-size: 26px;
+                padding: 10px;
+                margin-top: -40px;
+            }
+            hr{
+                width: 100%;
+                border: 1px solid #EEEEEE;
+            }
+            .legend{
+                text-align: end;
+                padding-top: 20px;
+                width: 36%;
+            }
+            .line{
+                display: flex;
+                justify-content: end;
+            }
+            .circle{
+                border: 1px solid;
+                border-radius: 50%;
+                width: 21px;
+                height: 21px;
+                margin: 3px;
+            }
+            .white{
+                border-color: #DCDCDC;
+                background-color: #F5F5F5;
+            }
+            .green{
+                color: white;
+                border-color: #6FD084;
+                background-color: #6FD084;
+            }
+            .blue{
+                color: white;
+                border-color: #37B0C1;
+                background-color: #37B0C1;
+            }
+            .red{
+                color: white;
+                border-color: #F98691;
+                background-color: #F98691;
+            }
+            .hw{
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 50px;
+            }
+            .task{
+                padding: 15px;
+                margin: 10px;
+                width: 295px;
+                border-radius: 5px;
+            }
+            .title{
+                font-weight: 500;
+                font-size: 20px;
+            }
+            .hw p{
+                margin-bottom: 10px;
+            }
+            .file-upload{
+                width: 100%;
+                border: 1px solid #DCDCDC;
+                border-radius: 5px;
+                overflow: hidden;
+                color: #6E7379;
+                background-color: white;
+                display: flex;
+                justify-content: space-between;
+            }
+            label{
+                padding: 10px;
+            }
+            .file-upload button{
+                height: 100;
+                padding: 10px 15px;
+                border: none;
+            }
+            .file-download{
+                width: 100%;
+                border: 1px solid white;
+                border-radius: 5px;
+                overflow: hidden;
+                display: flex;
+                justify-content: space-between;
+            }
+            .file-download button{
+                background-color: transparent;
+                width: 50%;
+                border: none;
+                color: white;
+                padding: 10px;
+            }
+            button[type="reset"]{
+                border-left: 1px solid white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+        	<div class="header">
+        		<div class="menu">
+                    <a href="index.html">
+                        <i class="fa-solid fa-chalkboard-user" style="width: 42px; height: 42px; color: rgb(255, 255, 255);"></i>
+                    </a>
+        		    <a href="../Exam/index.html">Home</a>
+        		    <a href="../Exam/index2.html" class="active">Homeworks</a>
+        		    <a href="../Exam/index3.html">Settings</a>
+        		</div>
+        		<a href="">
+        		    <img src="icons_hw_module_12.7/av_64.png" style="height: 56px;" alt="avatar">
+        		</a>
+        	</div>
+        	<div class="main">
+        	    <div class="head">
+        	        <h2>Homeworks</h2>
+        	        <div class="legend">
+        	            <div class="line">
+        	            	<p>current - </p>
+        	            	<p class="circle white"></p>
+        	            </div>
+        	            <div class="line">
+        	            	<p>rewiewed - </p>
+        	            	<p class="circle green"></p>
+        	            </div>
+        	            <div class="line">
+        	            	<p>under review - </p>
+        	            	<p class="circle blue"></p>
+        	            </div>
+        	            <div class="line">
+        	            	<p>overdue - </p>
+        	            	<p class="circle red"></p>
+        	            </div>
+        	        </div>
+        	        <h3>JavaScript</h3>
+        	        <div class="hw">
+        	            <div class="task white">
+        	            	<p class="title">Loops</p>
+        	            	<p>10/05/2019</p>
+        	            	<div class="file-upload">
+                              <label for="browse" class="btn">Choose file</label>
+                              <button type="button" class="btn">Browse</button>
+                            </div>
+        	            </div>
+        	            <div class="task blue">
+        	            	<p class="title">Conditional statements</p>
+        	            	<p>8/05/2019</p>
+        	            	<div class="file-download">
+                                <button type="button" class="btn">
+                                    <i class="fa-solid fa-download" style="width: 18px; height: 18px; color: rgb(255, 255, 255);"></i>
+                                    Your file
+                                </button>
+                                <button type="reset" class="btn">
+                                    <i class="fa-solid fa-trash-can" style="width: 18px; height: 18px; color: rgb(255, 255, 255);"></i>
+                                    Remove
+                                </button>
+                            </div>
+        	            </div>
+        	            <div class="task blue">
+        	            	<p class="title">Variables</p>
+        	            	<p>5/05/2019</p>
+        	            	<div class="file-download">
+                                <button type="button" class="btn">
+                                    <i class="fa-solid fa-download" style="width: 18px; height: 18px; color: rgb(255, 255, 255);"></i>
+                                    Your file
+                                </button>
+                                <button type="reset" class="btn">
+                                    <i class="fa-solid fa-trash-can" style="width: 18px; height: 18px; color: rgb(255, 255, 255);"></i>
+                                    Remove
+                                </button>
+                            </div>
+        	            </div>
+        	        </div>
+        	        <h3>HTML &amp; CSS</h3>
+        	        <hr>
+        	        <div class="hw">
+        	            <div class="task red">
+        	            	<p class="title">Adaptive layout</p>
+        	            	<p>29/04/2019</p>
+        	            	<div class="file-upload">
+                              <label for="browse" class="btn">Choose file</label>
+                              <button type="button" class="btn">Browse</button>
+                            </div>
+        	            </div>
+        	            <div class="task red">
+        	            	<p class="title">Grid Layout</p>
+        	            	<p>27/04/2019</p>
+        	            	<div class="file-upload">
+                              <label for="browse" class="btn">Choose file</label>
+                              <button type="button" class="btn">Browse</button>
+                            </div>
+        	            </div>
+        	            <div class="task green">
+        	            	<p class="title">Flexbox</p>
+        	            	<p>24/04/2019</p>
+        	            	<div class="file-download">
+                                <button type="button" class="btn">
+                                    <i class="fa-solid fa-download" style="width: 18px; height: 18px; color: rgb(255, 255, 255);"></i>
+                                    Your file
+                                </button>
+                                <button type="reset" class="btn">
+                                    <i class="fa-solid fa-rotate-right" style="width: 18px; height: 18px; color: rgb(255, 255, 255);"></i>
+                                    Resend
+                                </button>
+                            </div>
+        	            </div>
+        	            <div class="task green">
+        	            	<p class="title">Animations</p>
+        	            	<p>20/04/2019</p>
+        	            	<div class="file-download">
+                                <button type="button" class="btn">
+                                    <i class="fa-solid fa-download" style="width: 18px; height: 18px; color: rgb(255, 255, 255);"></i>
+                                    Your file
+                                </button>
+                                <button type="reset" class="btn">
+                                    <i class="fa-solid fa-rotate-right" style="width: 18px; height: 18px; color: rgb(255, 255, 255);"></i>
+                                    Resend
+                                </button>
+                            </div>
+        	            </div>
+        	            <div class="task green">
+        	            	<p class="title">Forms</p>
+        	            	<p>18/04/2019</p>
+        	            	<div class="file-download">
+                                <button type="button" class="btn">
+                                    <i class="fa-solid fa-download" style="width: 18px; height: 18px; color: rgb(255, 255, 255);"></i>
+                                    Your file
+                                </button>
+                                <button type="reset" class="btn">
+                                    <i class="fa-solid fa-rotate-right" style="width: 18px; height: 18px; color: rgb(255, 255, 255);"></i>
+                                    Resend
+                                </button>
+                            </div>
+        	            </div>
+        	            <div class="task green">
+        	            	<p class="title">Tables</p>
+        	            	<p>17/04/2019</p>
+        	            	<div class="file-download">
+                                <button type="button" class="btn">
+                                    <i class="fa-solid fa-download" style="width: 18px; height: 18px; color: rgb(255, 255, 255);"></i>
+                                    Your file
+                                </button>
+                                <button type="reset" class="btn">
+                                    <i class="fa-solid fa-rotate-right" style="width: 18px; height: 18px; color: rgb(255, 255, 255);"></i>
+                                    Resend
+                                </button>
+                            </div>
+        	            </div>
+        	        </div>
+        	    </div>
+        	</div>
+        </div>
+    </body>
+</html>

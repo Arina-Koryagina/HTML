@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            *
+            {
+                font-family: Segoe UI;
+            }
+            .box
+            {
+                width: 1026px;
+                border-radius: 15px;
+                overflow: hidden;
+            }
+            table
+            {
+                border-collapse: collapse;
+            }
+            th
+            {
+                color: white;
+                background-color: #7887AB;
+                padding: 15px 45px;
+                font-size: 20px;
+            }
+            th:nth-child(2)
+            {
+                background-color: #4F628E;
+            }
+            th:nth-child(3)
+            {
+                background-color: #2E4172;
+            }
+            th:nth-child(4)
+            {
+                background-color: #162955;
+            }
+            th:nth-child(5)
+            {
+                background-color: #061539;
+            }
+            .price
+            {
+                font-size: 45px;
+            }
+            td
+            {
+                padding: 10px;
+                background-color: #ECECEC;
+                text-align: center;
+            }
+            td:first-child
+            {
+                text-align: left;
+                padding: 15px 30px;
+            }
+            tr:nth-child(even)>td:nth-child(odd)
+            {
+                background-color: #DBDBDB;
+            }
+            tr:nth-child(odd)>td:nth-child(even)
+            {
+                background-color: #F3F3F3;
+            }
+            tr:last-child
+            {
+                height: 70px;
+            }
+            .button
+            {
+                text-transform: uppercase;
+                background-color: #D3D3D3;
+                border: 1px solid #B6B6B6;
+                font-weight: 500;
+                padding: 10px 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <table>
+                <tr>
+                    <th>Choose your plan</th>
+                    <th>starter<br><br><span class="price">$10</span><br>per month</th>
+                    <th>econom<br><br><span class="price">$30</span><br>per month</th>
+                    <th>standart<br><br><span class="price">$59</span><br>per month</th>
+                    <th>professional<br><br><span class="price">$99</span><br>per month</th>
+                </tr>
+                <tr>
+                    <td>Amount of space</td>
+                    <td>20GB</td>
+                    <td>40GB</td>
+                    <td>110GB</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>Bandwidth per month</td>
+                    <td>120GB</td>
+                    <td>240GB</td>
+                    <td>610GB</td>
+                    <td>1300GB</td>
+                </tr>
+                <tr>
+                    <td>Email accounts</td>
+                    <td>1</td>
+                    <td>15</td>
+                    <td>60</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>MySQL databases</td>
+                    <td>1</td>
+                    <td>15</td>
+                    <td>60</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>25h support</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Support tickets per month</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>14</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="button">start</span></td>
+                    <td><span class="button">start</span></td>
+                    <td><span class="button">start</span></td>
+                    <td><span class="button">start</span></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
